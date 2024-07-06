@@ -1,5 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-main {
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #2d3748;
+}
+
+header p {
+  color: #4a5568;
+}
+
+.features,
+.daily-tip,
+.weight-tracker,
+.exercise-tracker {
+  background-color: #edf2f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.features h2,
+daily-tip h2,
+weigth-tracker h2,
+.exercise-tracker h2 {
+  color: #2b6cb0;
+}
+
+.features ul,
+daily-tip p,
+.weight-tracker p,
+exercise-tracker p {
+  color: #2d3748;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta .inline-block {
+  background-color: #4299e1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta .inline-block:hover {
+  background-color: #3182ce;
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #3182ce;
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 8px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p,
+  .features ul,
+  .daily-tip p,
+  .weight-tracker p,
+  .exercise-tracker p {
+    font-size: 1.5rem;
+  }
 }
